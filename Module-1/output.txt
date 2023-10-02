@@ -1,0 +1,4 @@
+Number: 10 
+Float: 10.553000 
+Float: 10.55 
+Char: A

@@ -1,0 +1,3 @@
+Context of Learning:
+    1. Print
+    2. Variables and Data Types
