@@ -1,4 +1,7 @@
-# Phitron 🚀 
-__Become a pro programmer 🧑🏻‍💻__
+# Phitron 🚀
 
-### 1. Introduction to Programming Language (Running)
+**Become a pro programmer 🧑🏻‍💻**
+
+### Introduction to Programming Language
+
+    - Module 1: Basic Syntax, Variables, Data Types
