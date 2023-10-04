@@ -7,7 +7,7 @@ int main()
 
     // Arethmetic Operators: + , - , * , / , %
     int sum = a + b;
-    float c = a * 1.0 / b; // *
+    float c = a * 1.0 / b;
     // printf("%0.2f", c);
 
     // Relational Operators: <, <=, >, >=, ==, !=
