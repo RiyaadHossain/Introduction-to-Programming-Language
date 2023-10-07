@@ -38,11 +38,11 @@ int main()
             - Do While loop
     */
 
-    int iterator = 0;
-    while (iterator <= 10)
+    int iterator = 0;      // Initialization
+    while (iterator <= 10) // Condition check
     {
         printf("Hello %d\n", iterator);
-        iterator += 2;
+        iterator += 2; // Iterator
     }
 
     iterator = 1;
