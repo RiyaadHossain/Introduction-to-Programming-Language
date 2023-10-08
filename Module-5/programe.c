@@ -20,7 +20,7 @@ int main()
 
     int numChar;
 
-    if (letter >= 65 && letter <= 90)
+    if (letter >= 'A' && letter <= 'Z')
         numChar = letter + 32;
     else
         numChar = letter - 32;
@@ -28,13 +28,10 @@ int main()
     printf("%c\n", numChar);
 
     // Problem 4
-    int num = 3569;
-    while (num >= 9)
-    {
-        num /= 10;
-    }
+    int num = 4569; // X > 999 & X <= 9999
+    int ans = num / 1000;
 
-    if (num % 2 == 0)
+    if (ans % 2 == 0)
         printf("EVEN\n");
     else
         printf("ODD\n");
@@ -42,12 +39,15 @@ int main()
     // Problem 5
     int numOrAlpha = 'G';
 
-    if (numOrAlpha >= 65 && numChar <= 123)
+    if (numOrAlpha >= '0' && numOrAlpha <= '9')
+    {
+
+        printf("IS DIGIT\n");
+    }
+    else
     {
         printf("ALPHA\n");
-        if (
-            numOrAlpha >= 65 &&
-            numOrAlpha <= 90)
+        if (numOrAlpha >= 'A' && numOrAlpha <= 'Z')
         {
             printf("IS CAPITAL");
         }
@@ -56,24 +56,38 @@ int main()
             printf("IS SMALL");
         }
     }
-    else if (
-        numOrAlpha >= 48 &&
-        numOrAlpha <= 57)
-    {
-
-        printf("IS DIGIT\n");
-    }
 
     // Problem 6
     int num1 = 1, num2 = 2, num3 = 3;
 
     int max, min;
-    if (num1 > num2)
+    if (num1 >= num2 && num1 >= num3)
     {
+        max = num1;
+    }
+    else if (num2 >= num1 && num2 >= num3)
+    {
+        max = num2;
     }
     else
     {
+        max = num3;
     }
+
+    if (num1 <= num2 && num1 <= num3)
+    {
+        min = num1;
+    }
+    else if (num2 <= num1 && num2 <= num3)
+    {
+        min = num2;
+    }
+    else
+    {
+        min = num3;
+    }
+
+    printf("%d %d", min, max);
 
     return 0;
 }
