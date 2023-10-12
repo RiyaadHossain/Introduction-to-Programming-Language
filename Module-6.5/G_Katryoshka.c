@@ -1,22 +1,5 @@
 #include <stdio.h>
 
-long long min(long long num1, long long num2, long long num3)
-{
-    long long min_value = num1;
-
-    if (num2 < min_value)
-    {
-        min_value = num2;
-    }
-
-    if (num3 < min_value)
-    {
-        min_value = num3;
-    }
-
-    return min_value;
-}
-
 int main()
 {
 
@@ -31,42 +14,28 @@ int main()
 
     long long total = 0;
 
-    while (a >= 1 && c >= 1)
+    if (a >= 1 && b >= 1 && c >= 1)
     {
-        if (b >= 1)
+        long long min = a < b ? a : b;
+        min = min < c ? min : c;
+        total += min;
+        a -= min;
+        c -= min;
+    }
+
+    if (a >= 2 && c >= 1)
+    {
+        if (a / 2 >= c) // a = 55, c = 25
         {
-            long long minNum = min(a, b, c);
-            total += minNum;
-            a -= minNum;
-            b -= minNum;
-            c -= minNum;
-        }
-        else if (a >= 2)
-        {
-            long long minNum = a <= c ? a : c;
-            if (minNum == a)
-            {
-                total += (a / 2);
-                a = 0;
-            }
-            else
-            {
-                if (c >= a * 2)
-                {
-                    total += c;
-                    c = 0;
-                }
-                else
-                {
-                    total++;
-                    a -= 2;
-                    c--;
-                }
-            }
+            total += c;
+            a -= c * 2;
+            c = 0;
         }
         else
-        {
-            break;
+        { // a = 45, c = 25
+            total += (a / 2);
+            c -= (a / 2);
+            a -= (a / 2);
         }
     }
 
