@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/riyad/Documents/Phitron/1. Introduction to Programming Language",
-      "program": "/home/riyad/Documents/Phitron/1. Introduction to Programming Language/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
