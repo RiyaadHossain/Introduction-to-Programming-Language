@@ -11,12 +11,10 @@ int main()
     {
         if (str[i] == ',')
             str[i] = ' ';
-
-        if (str[i] >= 'A' && str[i] <= 'Z')
+        else if (str[i] >= 'A' && str[i] <= 'Z')
             str[i] = str[i] + 32;
-        else if (str[i] >= 'a' && str[i] <= 'z')
+        else
             str[i] = str[i] - 32;
-
     }
 
     printf("%s", str);
