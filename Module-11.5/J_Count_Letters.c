@@ -10,10 +10,10 @@ int main()
         freqArr[c - 'a']++;
     }
 
-    for (int i = 0; i <= 25; i++)
+    for (char i = 'a'; i <= 'z'; i++)
     {
-        if (freqArr[i] != 0)
-            printf("%c : %d\n", i + 'a', freqArr[i]);
+        if (freqArr[i-'a'] != 0)
+            printf("%c : %d\n", i, freqArr[i-'a']);
     }
 
     return 0;
