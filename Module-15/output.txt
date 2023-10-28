@@ -1,0 +1,3 @@
+0th address of num array - 0x7ffcec1a6c3c  
+1th value of num array - 2  
+5 2 3 
